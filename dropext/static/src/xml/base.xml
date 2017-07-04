@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <templates id='template' xmlspace='preserve'>
+
+  <!--Extends UserMenu -->
+   <t t-extend="UserMenu">
+
+     <t t-jquery="li.divider" t-operation="after">
+       <li><a href="#" data-menu="support_menu">Support on "Suvit"</a></li>
+     </t>
+   </t>
+
+</templates>
