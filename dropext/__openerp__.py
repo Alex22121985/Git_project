@@ -1,19 +1,20 @@
 {
-    'name': 'Dropext',
+    'name' : 'Dropext',
     'version': '1.1',
-    'author': 'Alex Skiba',
+	'author': 'Alex Skiba',
+    'summary': 'Integrates additional UserMenu item',
     'category': 'Tools',
-	'summary': 'Integrates additional UserMenu item',
-	'description':
+    'description':
         """
 Dropext
 =================
 
 Adds additional menu in dropdown user menu.
-
         """,
-	'depends': ['web'],	
-    'qweb' : [ 'static/src/xml/base.xml' ],
-    'installable': True,
+    'data': [
+        'data/dropext.xml',
+    ],
+    'depends' : ['web'],
+    'qweb': ['static/src/xml/base.xml'],
     'application': True,
 }
